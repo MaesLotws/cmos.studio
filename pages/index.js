@@ -1,9 +1,10 @@
-import { Container, Box, Heading, Image } from "@chakra-ui/react"
+import { Container, Box, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import Section from "../componenets/section"
 
 const Page = () => {
     return(
         <Container>
-            <Box borderRadius="lg" bg="red" p={3} mb = {6} align = "center">
+            <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb = {6} align = "center">
                 Hello, I&apos;m a web and game developer based in Canada
             </Box>
             <Box display={{md: 'flex'}}>
@@ -17,6 +18,15 @@ const Page = () => {
                 <Image borderColor="whiteAlpha.800" borderWidth = {2} borderStyle = "solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/cmos.jpg" alt="cmos"/>
             </Box>
             </Box>
+
+            <Section delay={0.1}>
+                <Heading as="h3" variant="section-title">
+                    Work
+                </Heading>
+                <p>
+                    Paragraph
+                </p>
+            </Section>
         </Container>
     )
 }
