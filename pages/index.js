@@ -1,5 +1,9 @@
-import { Container, Box, Heading, Image, useColorModeValue } from "@chakra-ui/react"
+import { Container, Box, Button, Heading, Image, useColorModeValue, Link } from "@chakra-ui/react"
 import Section from "../componenets/section"
+import Paragraph from "../componenets/paragraph"
+import NextLink from 'next/link'
+import { ChevronRightIcon } from "@chakra-ui/icons"
+import { BioSection, BioYear } from "../componenets/bio"
 
 const Page = () => {
     return(
@@ -11,8 +15,8 @@ const Page = () => {
             <Box flexGrow = {1}>
             <Heading as="h2" variant="page-title">
                 Cmos
-            </Heading>
-            <p>Musician, Web-Designer, Game-Developer</p>
+            </Heading>  
+            <p>Musician, Student, and Lain-enthusiast</p>
             </Box>
             <Box flexShrink={0} mt={{base:4, md:0}} ml={{md: 6}} align = "center">
                 <Image borderColor="whiteAlpha.800" borderWidth = {2} borderStyle = "solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/cmos.jpg" alt="cmos"/>
@@ -23,12 +27,51 @@ const Page = () => {
                 <Heading as="h3" variant="section-title">
                     Work
                 </Heading>
-                <p>
-                    Paragraph
-                </p>
+                <Paragraph>
+                    I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m working on a game called {''}
+                    <NextLink href="/works/lorien"><Link>Lorien </Link></NextLink>
+                    and my musical project {''}
+                    <NextLink href="/projects/volitiledreams"><Link>Volitile Dreams</Link></NextLink>
+                </Paragraph>
+            <Box align="center" my={4}>
+                <NextLink href = "works/">
+                    <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
+                        My Portfolio
+                    </Button>
+                </NextLink>
+            </Box>
+            </Section>
+            <Section delay={0.2}>
+                <Heading as="h3" variant="section-title">
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>
+                        2005
+                    </BioYear>
+                    Born in Calgary, AB
+                </BioSection>
+                <BioSection>
+                    <BioYear>
+                        2011
+                    </BioYear>
+                    Began coding for the first time through a publicly funded youth-program
+                </BioSection>
+                <BioSection>
+                    <BioYear>
+                        2020
+                    </BioYear>
+                    Enrolled at Sir Winston Churchill High School and it&apos;s computer science program
+                </BioSection>
+                <BioSection>
+                    <BioYear>
+                        2021
+                    </BioYear>
+                    Accepted into the prestigious International Baccalaureate program for computer science
+                </BioSection>
             </Section>
         </Container>
     )
 }
 
-export default Page 
+export default Page
