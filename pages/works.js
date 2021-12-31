@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
+import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Section from "../componenets/section"
 import { WorkGridItem } from "../componenets/grid-item";
 import thumbVolDreams from '../public/images/works/VolDreamsEyeCatch.jpg'
