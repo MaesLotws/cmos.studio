@@ -31,7 +31,7 @@ const Page = () => {
                     I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m working on a game called {''}
                     <NextLink href="/works/lorien"><Link>Lorien </Link></NextLink>
                     and my musical project {''}
-                    <NextLink href="/projects/volitiledreams"><Link>Volitile Dreams</Link></NextLink>
+                    <NextLink href="/works/volitiledreams"><Link>Volitile Dreams</Link></NextLink>
                 </Paragraph>
             <Box align="center" my={4}>
                 <NextLink href = "works/">
