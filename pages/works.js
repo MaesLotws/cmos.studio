@@ -3,6 +3,7 @@ import Section from "../componenets/section"
 import { WorkGridItem } from "../componenets/grid-item";
 import thumbVolDreams from '../public/images/works/VolDreamsEyeCatch.jpg'
 import thumbCmos from '../public/images/cmos.jpg'
+import thumbBald from '../public/images/works/bald.png'
 
 const Works = () => {
     return(
@@ -19,6 +20,11 @@ const Works = () => {
                 <Section>
                     <WorkGridItem id="cmos" title="cmos" thumbnail={thumbCmos}>
                         Game and movie soundtracks
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="balddivision" title="Bald Division" thumbnail={thumbBald}>
+                        A division of bald people
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
