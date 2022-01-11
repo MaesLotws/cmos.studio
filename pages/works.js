@@ -2,7 +2,7 @@ import { Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import Section from "../componenets/section"
 import { WorkGridItem } from "../componenets/grid-item";
 
-import thumbVolDreams from '../public/images/works/VolDreamsEyeCatch.jpg'
+import thumbCmos from '../public/images/cmos.jpg'
 
 const Works = () => {
     return(
