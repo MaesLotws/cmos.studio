@@ -3,8 +3,6 @@ import Section from "../componenets/section"
 import { WorkGridItem } from "../componenets/grid-item";
 
 import thumbVolDreams from '../public/images/works/VolDreamsEyeCatch.jpg'
-import thumbCmos from '../public/images/cmos.jpg'
-import thumbBald from '../public/images/works/bald.png'
 
 const Works = () => {
     return(
