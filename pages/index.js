@@ -1,12 +1,14 @@
 import { Container, Box, Button, Heading, Image, useColorModeValue, Link } from "@chakra-ui/react"
 import Section from "../componenets/section"
 import Paragraph from "../componenets/paragraph"
+import Layout from "../componenets/layouts/article"
 import NextLink from 'next/link'
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioSection, BioYear } from "../componenets/bio"
 
 const Page = () => {
     return(
+        <Layout>
         <Container>
             <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb = {6} align = "center">
                 Hello, I&apos;m a web and game developer based in Canada
@@ -22,16 +24,13 @@ const Page = () => {
                 <Image borderColor="whiteAlpha.800" borderWidth = {2} borderStyle = "solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/cmos.jpg" alt="cmos"/>
             </Box>
             </Box>
-
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
                     Work
                 </Heading>
                 <Paragraph>
-                    I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m working on a game called {''}
-                    <NextLink href="/works/lorien"><Link>Lorien </Link></NextLink>
-                    and my musical project {''}
-                    <NextLink href="/works/volitiledreams"><Link>Volitile Dreams</Link></NextLink>
+                    I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m doing compositions for films, {''}
+                    <NextLink href="/works/cmos"><Link>under my own name</Link></NextLink>
                 </Paragraph>
             <Box align="center" my={4}>
                 <NextLink href = "works/">
@@ -71,6 +70,7 @@ const Page = () => {
                 </BioSection>
             </Section>
         </Container>
+        </Layout>
     )
 }
 

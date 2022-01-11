@@ -31,7 +31,6 @@ const Logo = () => {
                     ml={3}>
                         cmo
                     </Text>
-
                 </LogoBox>
             </a>
         </Link>
