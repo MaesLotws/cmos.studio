@@ -12,31 +12,23 @@ public class Page extends Section,Paragraph,Layout,NextLink{
         Box HeadingSet = new Box(display=(md=flex));
         Box HeadingSetGrow = new Box(flexGrow = 1);
         Heading HeadingText = new Heading(size="h2", variant="page-title");
-        Heading.text("Cmos");
+        HeadingText.setText("Cmos");
         Paragraph p = new Paragraph("Musician, Student, and Lain-enthusiast");
-	Box imageBox = new Box(flexShrink=0,mt="base:4, md:0", ml="md:6", align="center";
-	Image profileImage = new Image(borderColor="whiteAlpha.800", borderWidth=2, borderStyle="solid", maxWidth="100px", display="inline-block", borderRadius="full", src="/images/cmos.jpg" alt="cmos";
+	    Box imageBox = new Box(flexShrink=0,mt="base:4, md:0", ml="md:6", align="center");
+	    Image profileImage = new Image(borderColor="whiteAlpha.800", borderWidth=2, borderStyle="solid", maxWidth="100px", display="inline-block", borderRadius="full", src="/images/cmos.jpg" alt="cmos";
         imageBox.render(profileImage);
-	
-		<Section delay={0.1}>
-                    <Heading as="h3" variant="section-title">
-                        Work
-                    </Heading>
-                    <Paragraph>
-                        I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m working on a game called {''}
-                        <NextLink href="/works/yesteryear"><Link>Yesteryear </Link></NextLink>
-                        and my musical project {''}
-                        <NextLink href="/works/volitiledreams"><Link>Volitile Dreams</Link></NextLink>
-                    </Paragraph>
-                <Box align="center" my={4}>
-                    <NextLink href = "works/">
-                        <Button rightIcon={<ChevronRightIcon/>} colorScheme="teal">
-                            My Portfolio
-                        </Button>
-                    </NextLink>
-                </Box>
-                </Section>
-                <Section delay={0.2}>
+        Section headerSection = new Section(delay=0.1);
+        Section header = new Header(size="h3", varient="section-title");
+        header.setText("Work");
+        Paragraph aboutMe = new Paragraph();
+        aboutMe.setText("I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m doing compositions for films" + {''});
+        NextLink workLink = new NextLink(Link="/works/cmos", text="Under my own name");
+        Box portfolioButton = new Box(align="center", my=4);
+        NextLink PortfilioLink = new NextLink(Link="works/");
+        Button rightIcon = new Button("<ChevronRightIcon>", colorScheme="teal");
+        rightIcon.setText("My Portfolio");
+        Section bioSection = new Section(delay=0.2);
+        Heading bioHeading = new Heading()
                     <Heading as="h3" variant="section-title">
                         Bio
                     </Heading>
