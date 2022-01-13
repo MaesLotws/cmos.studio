@@ -1,7 +1,6 @@
-import NextLink from 'next/link'
-import { Container, Badge, Link, List, ListItem, Heading, Box } from "@chakra-ui/react"
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import { Title, WorkImage, Meta } from "../../componenets/work"
+import { Container, Heading } from "@chakra-ui/react"
+//import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { Title } from "../../componenets/work"
 import P from '../../componenets/paragraph'
 import Layout from "../../componenets/layouts/article"
 import Section from '../../componenets/section';
@@ -24,6 +23,16 @@ const Work = () => {
                 <Section>
                     <Heading display='section-title' as="h3" fontSize={20} mb={4}>
                         Is This the Place?
+                    </Heading>
+                </Section>
+                <Section>
+                    <Heading display="section-title" as="h3" fontSize={20} mb={4}>
+                        The Flautist
+                    </Heading>
+                </Section>
+                <Section>
+                    <Heading display="section-title" as="h3" fontSize={20} mb={4}>
+                        Bullet-Hell Academy (Grade 10 Final Compsci Project)
                     </Heading>
                 </Section>
             </Container>
