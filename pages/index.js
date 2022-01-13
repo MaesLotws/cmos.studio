@@ -58,6 +58,12 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>
+                            2019
+                        </BioYear>
+                        Began teaching young children basic coding through the same program I began learning with
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>
                             2020
                         </BioYear>
                         Enrolled at Sir Winston Churchill High School and it&apos;s computer science program
