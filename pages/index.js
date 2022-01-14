@@ -1,18 +1,15 @@
-import { Container, Box, Button, Heading, Image, useColorModeValue, Link } from "@chakra-ui/react"
+import { Container, Box, Button, Heading, Image, Link, ListItem, List, Icon } from "@chakra-ui/react"
 import Section from "../componenets/section"
 import Paragraph from "../componenets/paragraph"
 import Layout from "../componenets/layouts/article"
 import NextLink from 'next/link'
-import { ChevronRightIcon } from "@chakra-ui/icons"
 import { BioSection, BioYear } from "../componenets/bio"
+import { IoLogoInstagram, IoLogoYoutube, IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
     return (
         <Layout>
             <Container>
-                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Hello, I&apos;m a web and game developer based in Canada
-                </Box>
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
@@ -32,13 +29,6 @@ const Page = () => {
                         I&apos;m a young student with a deeply rooted passion for coding, problem solving, and music. Currently I&apos;m doing compositions for films, {''}
                         <NextLink href="/works/cmos"><Link>under my own name</Link></NextLink>
                     </Paragraph>
-                    <Box align="center" my={4}>
-                        <NextLink href="works/">
-                            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-                                My Portfolio
-                            </Button>
-                        </NextLink>
-                    </Box>
                 </Section>
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title">
@@ -74,6 +64,35 @@ const Page = () => {
                         </BioYear>
                         Accepted into the prestigious International Baccalaureate program for computer science
                     </BioSection>
+                </Section>
+                <Section delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        Reach me
+                    </Heading>
+                    <List>
+                        <ListItem>
+                            <Link href="https://www.instagram.com/c.mos__/" target="_blank">
+                                <Button variant="ghost" leftIcon={<Icon as={IoLogoInstagram} />}>
+                                    Instagram
+                                </Button>
+                            </Link>
+                            <Link href="https://twitter.com/Maeslotws" target="_blank">
+                                <Button variant="ghost" leftIcon={<Icon as={IoLogoTwitter} />}>
+                                    Twitter
+                                </Button>
+                            </Link>
+                            <Link href="https://github.com/MaesLotws" target="_blank">
+                                <Button variant="ghost" leftIcon={<Icon as={IoLogoGithub} />}>
+                                    Github
+                                </Button>
+                            </Link>
+                            <Link href="https://www.youtube.com/channel/UCIHwnT3fN3LNXq4Vg-20aKQ" target="blank">
+                                <Button variant="ghost" leftIcon={<Icon as={IoLogoYoutube} />}>
+                                    YouTube
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
                 </Section>
             </Container>
         </Layout>

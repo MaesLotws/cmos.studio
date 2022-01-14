@@ -12,6 +12,10 @@ height: 30px;
 line-height: 20px;
 padding: 10px;
 
+img {
+    transition: 200ms ease;
+}
+  
 &:hover img{
     transform: rotate(20deg);
 }
@@ -19,16 +23,16 @@ padding: 10px;
 const Logo = () => {
     const leafPrintimg = `/images/leafIcon${useColorModeValue('', '-dark')}.png`
 
-    return(
+    return (
         <Link href="/">
             <a>
                 <LogoBox>
                     <Image src={leafPrintimg} width={20} height={20} alt="logo" />
                     <Text
-                    color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-                    fontFamily = 'M PLUS Rounded 1c'
-                    fontWeight = "bold"
-                    ml={3}>
+                        color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+                        fontFamily='M PLUS Rounded 1c'
+                        fontWeight="bold"
+                        ml={3}>
                         cmo
                     </Text>
                 </LogoBox>
