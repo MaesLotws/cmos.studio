@@ -4,7 +4,7 @@ import Paragraph from "../componenets/paragraph"
 import Layout from "../componenets/layouts/article"
 import NextLink from 'next/link'
 import { BioSection, BioYear } from "../componenets/bio"
-import { IoLogoInstagram, IoLogoYoutube, IoLogoTwitter, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoYoutube, IoLogoGithub } from 'react-icons/io5'
 
 const Page = () => {
     return (
