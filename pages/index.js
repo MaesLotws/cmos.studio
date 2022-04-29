@@ -15,7 +15,7 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             Cmos
                         </Heading>
-                        <p>Musician, Student, and Lain-enthusiast</p>
+                        <p>Musician, Student, Programmer</p>
                     </Box>
                     <Box flexShrink={0} mt={{ base: 4, md: 0 }} ml={{ md: 6 }} align="center">
                         <Image borderColor="whiteAlpha.800" borderWidth={2} borderStyle="solid" maxWidth="100px" display="inline-block" borderRadius="full" src="/images/cmos.jpg" alt="cmos" />
@@ -71,16 +71,6 @@ const Page = () => {
                     </Heading>
                     <List>
                         <ListItem>
-                            <Link href="https://www.instagram.com/c.mos__/" target="_blank">
-                                <Button variant="ghost" leftIcon={<Icon as={IoLogoInstagram} />}>
-                                    Instagram
-                                </Button>
-                            </Link>
-                            <Link href="https://twitter.com/Maeslotws" target="_blank">
-                                <Button variant="ghost" leftIcon={<Icon as={IoLogoTwitter} />}>
-                                    Twitter
-                                </Button>
-                            </Link>
                             <Link href="https://github.com/MaesLotws" target="_blank">
                                 <Button variant="ghost" leftIcon={<Icon as={IoLogoGithub} />}>
                                     Github
